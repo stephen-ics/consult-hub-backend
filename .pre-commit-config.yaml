@@ -1,0 +1,19 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.4.0 # Use the latest git tag from the repo
+    hooks:
+      - id: trailing-whitespace
+      - id: check-yaml
+      - id: end-of-file-fixer
+      - id: check-added-large-files
+
+  - repo: https://github.com/psf/black
+    rev: 22.3.0 # Update this to a more recent version
+    hooks:
+      - id: black
+        language_version: python3.10
+
+  - repo: https://github.com/prettier/pre-commit
+    rev: v2.0.1 # Use the latest git tag from the repo
+    hooks:
+      - id: prettier
